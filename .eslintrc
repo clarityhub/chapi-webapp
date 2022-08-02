@@ -1,0 +1,12 @@
+{
+    "extends": [
+        "clarity-hub/react"
+    ],
+    "rules": {
+        "indent": [
+            "error",
+            "tab"
+        ],
+        "no-tabs": "off"
+    }
+}

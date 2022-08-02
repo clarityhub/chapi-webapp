@@ -1,0 +1,78 @@
+{
+  "name": "clarityhub-webapp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "lint": "eslint src",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && CI=true npm test",
+      "pre-push": "npm run lint && CI=true npm test"
+    }
+  },
+  "dependencies": {
+    "@aws-amplify/api": "^1.0.35",
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-proposal-class-properties": "^7.3.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.3.2",
+    "@babel/plugin-transform-destructuring": "^7.3.2",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "@bugsnag/js": "^6.3.2",
+    "@bugsnag/plugin-react": "^6.2.0",
+    "@clarityhub/unity-core": "^1.2.8",
+    "@clarityhub/unity-forms": "^1.3.2",
+    "@clarityhub/unity-web": "^1.9.5",
+    "@emotion/core": "^10.0.10",
+    "@emotion/styled": "^10.0.11",
+    "@material-ui/core": "^4.0.2",
+    "@material-ui/icons": "^3.0.2",
+    "aws-amplify": "^1.1.28",
+    "babel-eslint": "^10.0.1",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.13.1",
+    "eslint": "^5.15.1",
+    "eslint-config-clarity-hub": "^2.0.2",
+    "eslint-config-react-app": "^4.0.1",
+    "eslint-plugin-emotion": "^10.0.7",
+    "eslint-plugin-flowtype": "^3.9.1",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "formik": "^1.4.4",
+    "husky": "^2.3.0",
+    "jest-enzyme": "^7.0.2",
+    "lodash.get": "^4.4.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-ga": "^2.6.0",
+    "react-redux": "^7.0.3",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "^3.0.1",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
+    "ve": "^0.1.3",
+    "webpack": "4.29.6"
+  },
+  "devDependencies": {},
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
